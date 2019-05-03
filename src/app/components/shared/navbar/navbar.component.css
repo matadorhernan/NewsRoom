@@ -1,0 +1,26 @@
+.search-bar, .search-button {
+    height: 30px;
+}
+
+.search-bar {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.search-button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.search-button i {
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.nabvar a {
+    font-size: .8em;
+}

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700,900');
+
+.font-play-fair {
+  font-family: 'Playfair Display SC', serif;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.bg-darker {
+  background: #222427;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background: #e0e0e0;
+}
+
+/* SCROLLER */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(73, 73, 73);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d39e00;
+}
+

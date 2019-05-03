@@ -1,0 +1,26 @@
+<ng-container *ngIf="!loading; else elseTemplate" class="w-100">
+    <section class="home p-0 m-0">
+        <div class="row p-0 m-0">
+          <div class="col-3 bg-dark p-0 m-0">
+            <div class="list-group p-0 m-0">
+              <a class="m-0 py-3 px-3 w-100 d-flex" *ngFor="let article of articles; let i = index" [routerLink]="['/home', i]" routerLinkActive="router-link-active" >
+                <div class="img-container mr-3">
+                  <div class="news-thumb" #img>{{loadImage(img, article.urlToImage)}}</div>
+                </div>
+                <div class="d-flex flex-column">
+                  <p class="text-white pb-0 m-0">{{article.title | slice:0:55}}...</p>
+                  <label class="p-0 m-0 text-warning"><small>{{article.source.name}}</small></label>
+                  <label class="p-0 m-0 text-white-50"><small>{{article.publishedAt | agoDate}}</small></label>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-9 p-0 m-0 bg-darker">
+            <app-article [articles]="articles"></app-article>
+          </div>
+        </div>
+      </section>
+</ng-container>
+<ng-template #elseTemplate>
+ <app-loading></app-loading>
+</ng-template>

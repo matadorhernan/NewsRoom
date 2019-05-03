@@ -1,0 +1,26 @@
+article {
+    max-height: calc(100vh - 55.98px);
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.news-image-container {
+    height: 400px;
+}
+
+.news-image-container div {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.display-4 {
+    font-size: 40px !important;
+}
+
+.article-text {
+    column-count: 2;
+    word-break: break-all;
+
+}
