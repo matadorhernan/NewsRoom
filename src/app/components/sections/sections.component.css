@@ -1,0 +1,23 @@
+.section-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.row:focus {
+    outline: none !important;
+   box-shadow: none;
+}
+.row {
+    cursor: pointer;
+    height: 38.7px;
+    transition: .3s;
+}
+
+.row:hover {
+    background: #0d0e0e;
+}
+
+.row:hover i {
+    transform: scale(1.05);
+}

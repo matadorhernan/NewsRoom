@@ -1,11 +1,36 @@
 <article>
-    <div class="news-image-container">
-        <div #imgHeader>{{loadImage(imgHeader, article.urlToImage)}}</div>
+  <div class="news-image-container">
+    <div #imgHeader class="p-5">
+      {{loadImage(imgHeader, article.urlToImage)}}
+      <div class="btn-holder d-flex justify-content-between">
+        <div>
+          <button type="button" class="btn btn-outline-light" (click)="changePage('prev')"
+            *ngIf="prevEnabled">PREVIOUS</button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-light" (click)="changePage('next')" *ngIf="nextEnabled">NEXT</button>
+        </div>
       </div>
-      <div class="row text-white p-5">
-        <h1 class="display-4">{{article.title}}</h1>
-        <label>Author: {{article.author | author}}</label>
-        <p class="article-text mt-3">{{article.content | content}}</p>
-      </div>
-      <app-footer></app-footer>
+    </div>
+  </div>
+  <div class="row text-white p-5">
+    <h1 class="display-4">{{article.title}}</h1>
+    <label>Author: {{article.author | author}}</label>
+    <p class="article-text mt-3">{{article.content | content}} Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consequuntur, quis incidunt blanditiis corporis alias quae vero eligendi iusto hic maxime, nesciunt fugiat ipsa,
+      id veritatis deserunt voluptatibus. Reprehenderit nihil ullam praesentium repellendus. Temporibus nam recusandae,
+      libero cum magni nemo quibusdam dolores illo ipsa eaque aperiam harum sapiente nisi excepturi veniam aspernatur
+      esse quaerat quasi dignissimos nesciunt blanditiis molestias ex ullam neque? Pariatur aperiam vitae odit rerum.
+      Eos temporibus suscipit quidem quasi dolorum veritatis rerum incidunt quis distinctio ducimus. Sequi dolores ipsum
+      dolore consequatur eveniet tempora vel, accusantium velit magnam animi nihil ipsam! Inventore incidunt quae quis
+      optio magni eveniet at suscipit! Ipsum enim voluptatibus, et reprehenderit illum, dolorem quasi laborum assumenda
+      error unde impedit accusamus quidem! Harum laboriosam doloremque omnis praesentium animi culpa, temporibus nisi
+      perspiciatis magnam exercitationem porro, aliquid totam obcaecati quos fuga illo possimus iure veritatis
+      reiciendis accusantium quia corrupti mollitia corporis cumque. Cum incidunt distinctio laudantium optio sapiente
+      ut neque officiis harum reiciendis nemo corrupti inventore dolore non ratione, eum commodi culpa quo assumenda sit
+      illum cumque est laboriosam. Sit quas magni rem impedit atque nemo, unde exercitationem natus labore, officia quia
+      vitae, esse neque suscipit cum quaerat nam quisquam repellendus ipsum officiis cupiditate reprehenderit quod
+      aperiam?</p>
+  </div>
+  <app-footer></app-footer>
 </article>

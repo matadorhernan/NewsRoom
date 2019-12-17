@@ -24,3 +24,8 @@ article {
     word-break: break-all;
 
 }
+
+.btn-holder button{
+    height: 40px !important;
+    border-radius: 25px;
+}

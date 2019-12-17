@@ -1,0 +1,33 @@
+
+.list-group {
+    height: calc(100vh - 55.98px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.list-group a {    
+    transition: all .3s;
+}
+
+.list-group p {
+    font-size: .8em;
+}
+
+.image-container {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.news-thumb {
+    border-radius: .20rem;
+    width: 80px !important;
+    height: 80px !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.list-group a:hover {
+  background: #222427;
+  text-decoration-line: none;
+  transform: scale(1.01);
+}

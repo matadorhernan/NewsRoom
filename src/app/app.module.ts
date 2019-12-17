@@ -11,6 +11,11 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { ContentPipe } from './pipes/content.pipe';
 import { AuthorPipe } from './pipes/author.pipe';
 import { AgoDatePipe } from './pipes/ago-date.pipe';
+import { MenuComponent } from './components/menu/menu.component';
+import { SectionsComponent } from './components/sections/sections.component';
+import { SearchComponent } from './components/search/search.component';
+import { DateFormatterPipe } from './pipes/date-formatter.pipe';
+import { SortWordsPipe } from './pipes/sort-words.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { AgoDatePipe } from './pipes/ago-date.pipe';
     LoadingComponent,
     ContentPipe,
     AuthorPipe,
-    AgoDatePipe
+    AgoDatePipe,
+    MenuComponent,
+    SectionsComponent,
+    SearchComponent,
+    DateFormatterPipe,
+    SortWordsPipe
   ],
   imports: [
     BrowserModule,

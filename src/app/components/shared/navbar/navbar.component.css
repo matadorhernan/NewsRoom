@@ -1,5 +1,5 @@
 .search-bar, .search-button {
-    height: 30px;
+    height: 40px;
 }
 
 .search-bar {
@@ -24,3 +24,9 @@
 .nabvar a {
     font-size: .8em;
 }
+
+.jumbotron {
+    z-index: 6000;
+    
+}
+
